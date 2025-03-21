@@ -1,12 +1,25 @@
-// Copyright (c) 2020 Mr. Coxall All rights reserved
+// Copyright (c) Catherine Vu All rights reserved
 //
-// Created by: Mr. Coxall
-// Created on: Sep 2020
+// Created by: Catherine Vu
+// Created on: March 21 2025
 // This file contains the JS functions for index.html
 
+"use strict"
+
 /**
- * Displays an alert with the message "Hello, World!"
+ * This function calculates area of a triangle.
  */
-function myButtonClicked() {
-  alert("Hello, World!")
-}
+        function calculateArea() {
+          
+        }
+const streetNumber = document.querySelector('base').value;
+const streetName = document.querySelector('base').value;
+
+            let base = document.getElementById('base').value;
+            let height = document.getElementById('height').value;
+            if (base > 0 && height > 0) {
+                let area = 0.5 * base * height;
+                parseFloat(document.getElementById('result')).innerText = "Area is: " + area + " cm²";
+            } else {
+                parseFloat(document.getElementById('result')).innerText = "Please enter valid positive numbers.";
+            }
