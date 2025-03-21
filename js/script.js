@@ -12,17 +12,17 @@
         function calculateArea() {
           
         }
-            const baseTriangle = document.querySelector('base').value;
-            const heightTriangle = document.querySelector('height').value;
+            const baseTriangle = document.querySelector("base").value;
+            const heightTriangle = document.querySelector("height").value;
 
 
             
             let base = document.getElementById('base').value;
-            
+
             let height = document.getElementById('height').value;
             if (base > 0 && height > 0) {
                 let area = 0.5 * base * height;
                 parseFloat(document.getElementById('result')).innerText = "Area is: " + area + " cm²";
             } else {
-                parseFloat(document.getElementById('result')).innerText = "Please enter valid positive numbers.";
+                parseFloat(document.getElementById('result')).innerText = "Please enter integers.";
             }
