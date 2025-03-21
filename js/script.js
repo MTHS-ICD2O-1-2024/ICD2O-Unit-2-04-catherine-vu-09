@@ -12,10 +12,10 @@
         function calculateArea() {
           
         }
-const streetNumber = document.querySelector('base').value;
-const streetName = document.querySelector('base').value;
 
+            const streetNumber = document.querySelector('base').value;
             let base = document.getElementById('base').value;
+            const streetName = document.querySelector('height').value;
             let height = document.getElementById('height').value;
             if (base > 0 && height > 0) {
                 let area = 0.5 * base * height;
