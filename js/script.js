@@ -9,22 +9,20 @@
 /**
  * This function calculates area of a triangle.
  */
-        function calculateArea() {
+function calculateArea() {
+    let base = document.getElementById('base').value;
+    let height = document.getElementById('height').value;
+    let result = document.getElementById('result');
 
-        }
+    if (base > 0 && height > 0) {
+        let area = 0.5 * base * height;
+        result.innerText = "Area is: " + area + " cm²";
+        result.style.color = "#333"; // Default color for result
+    } else {
+        result.innerText = "Please enter valid positive numbers.";
+        result.style.color = "red"; // Change text color if input is invalid
+    }
 
-            let input = event.target;
-            let errorSpan = input.nextElementSibling;
-            let validSpan = errorSpan.nextElementSibling;
-            
-            if (input.value === "" || isNaN(input.value) || Number(input.value) <= 0) {
-                errorSpan.style.display = "block";
-                validSpan.style.display = "none";
-            } else {
-                errorSpan.style.display = "none";
-                validSpan.style.display = "block";
-            
-                document.getElementById("length").addEventListener("input", validateInput);
-        document.getElementById("width").addEventListener("input", validateInput);
-            }
+
+}
 

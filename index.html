@@ -39,23 +39,21 @@
           </div>
           <br>
 <div class="container">
-  <div class="input-group">
-    <label for="base"> base of triangle (cm)</label>
-    <input type="text" id="base" placeholder="Enter base">
+  <h2>Triangle Area Calculator</h2>
 
-    <span class="valid">Valid input!</span>
-  </div>
-  
   <div class="input-group">
-    <label for="height"> height of rectangle (cm)</label>
-    <input type="text" id="height" placeholder="Enter height">
-
-    <span class="valid">Valid input!</span>
+    <label for="base">Base of Triangle (cm)</label>
+    <input type="number" id="base" placeholder="Enter base">
   </div>
-</br>
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-  onclick="calculateArea()" type="button">
-  Enter!
+
+  <div class="input-group">
+    <label for="height">Height of Triangle (cm)</label>
+    <input type="number" id="height" placeholder="Enter height">
+  </div>
+
+  <button onclick="calculateArea()">Calculate</button>
+  <p id="result"></p>
+</div>
 </button>
 <script src="script.js"></script>
 </form>
