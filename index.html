@@ -38,18 +38,32 @@
           <form>
           </div>
           <br>
-  <input type="number" id="base" placeholder="Base">
-  <input type="number" id="height" placeholder="Height">
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-    onclick="calculateArea()" type="button">
-    Calculate!
-<p id="result">Area is: </p>
-</div>
-</button> 
+<div class="container">
+  <div class="input-group">
+    <label for="base"> base of triangle (cm)</label>
+    <input type="text" id="base" placeholder="Enter base">
+    <span class="error">Input is not a valid number.</span>
+    <span class="valid">Valid input!</span>
+  </div>
+  
+  <div class="input-group">
+    <label for="height"> height of rectangle (cm)</label>
+    <input type="text" id="height" placeholder="Enter height">
+    <span class="error">Input is not a valid number.</span>
+    <span class="valid">Valid input!</span>
+  </div>
+</br>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+  onclick="enterClicked()" type="button">
+  Enter!
+</button>
+<script src="script.js"></script>
+</form>
+<br>
 </main>
 </div>
 </body>
 
+
 </html>
 
-        
