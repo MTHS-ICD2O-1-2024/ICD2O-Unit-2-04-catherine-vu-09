@@ -19,7 +19,7 @@ function calculateArea() {
         result.innerText = "Area is: " + area + " cm²";
         result.style.color = "#333"; // Default color for result
     } else {
-        result.innerText = "Please enter valid positive numbers.";
+        result.innerText = "Please integers.";
         result.style.color = "red"; // Change text color if input is invalid
     }
 
