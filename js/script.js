@@ -17,10 +17,15 @@
     let result = document.getElementById('result');
 
 
-    if (base && height) {
+      if (base && height && !isNaN(base) && !isNaN(height)) {
+      }
+      // Convert values to numbers
+      base = parseFloat(base);
+      height = parseFloat(height); {
       let area = 0.5 * base * height;  // Correct formula for area of a triangle
         result.innerText = "Area is: " + area + " cm²";
-    } else {
-        result.innerText = "Please enter both base and height.";
-    }
+
+    } 
+    
+
 
