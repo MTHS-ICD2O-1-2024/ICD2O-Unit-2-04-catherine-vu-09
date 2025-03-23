@@ -10,13 +10,17 @@
  * This function calculates area of a triangle.
  */
  // process
-function calculateArea() {
+    function calculateArea() {
+    
     let base = document.getElementById('base').value;
     let height = document.getElementById('height').value;
     let result = document.getElementById('result');
+    }
 
-    // output
-        let area = 2 * base * height;
+    if (base && height) {
+      let area = 0.5 * base * height;  // Correct formula for area of a triangle
         result.innerText = "Area is: " + area + " cm²";
-    } 
+    } else {
+        result.innerText = "Please enter both base and height.";
+    }
 
