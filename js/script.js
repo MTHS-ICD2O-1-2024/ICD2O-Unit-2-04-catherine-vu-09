@@ -11,11 +11,11 @@
  */
  // process
     function calculateArea() {
-    
+    }
     let base = document.getElementById('base').value;
     let height = document.getElementById('height').value;
     let result = document.getElementById('result');
-    }
+
 
     if (base && height) {
       let area = 0.5 * base * height;  // Correct formula for area of a triangle
